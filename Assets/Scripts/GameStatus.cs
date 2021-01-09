@@ -13,6 +13,19 @@ public class GameStatus : MonoBehaviour
     //State variables
     [SerializeField] int CurrentScore = 0;
 
+    private void Awake()
+    {
+        int gameStatusCount = FindObjectsOfType<GameStatus>().Length; 
+        if (gameStatusCount > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     private void Start()
     {
         scoreText.text = CurrentScore.ToString();     
