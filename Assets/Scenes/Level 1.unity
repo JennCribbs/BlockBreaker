@@ -1513,6 +1513,11 @@ PrefabInstance:
       propertyPath: gameSpeed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3232244469170093488, guid: a452fe38893cb684b985533db7109576,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 729734032}
     - target: {fileID: 3232244469170093489, guid: a452fe38893cb684b985533db7109576,
         type: 3}
       propertyPath: m_Name
